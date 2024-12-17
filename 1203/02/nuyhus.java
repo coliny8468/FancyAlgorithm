@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class nuyhus-m {
+public class nuyhus {
 
     public static void main(String[] args) throws IOException {
 
