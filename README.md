@@ -1,11 +1,11 @@
-# 🧩 12월 3주차 주간 문제
+# 🧩 12월 4주차 주간 문제
 | 출제자    | 문제링크                                  |
 |--------|---------------------------------------|
-| 1. 남수정 | https://www.acmicpc.net/problem/4485  |
-| 2. 민수현 | https://www.acmicpc.net/problem/2493  |
-| 3. 안주현 | https://www.acmicpc.net/problem/6497  |
-| 4. 이서현 | https://www.acmicpc.net/problem/5557  |
-| 5. 임수미 | https://www.acmicpc.net/problem/1501  |
+| 1. 남수정 |  |
+| 2. 민수현 |  |
+| 3. 안주현 |  |
+| 4. 이서현 |  |
+| 5. 임수미 |  |
 
 <br/>
 
