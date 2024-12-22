@@ -1,7 +1,7 @@
 # 🧩 12월 4주차 주간 문제
 | 출제자    | 문제링크                                  |
 |--------|---------------------------------------|
-| 1. 남수정 | https://www.acmicpc.net/problem/1958 | 
+| 1. 남수정 | https://www.acmicpc.net/problem/17297 | 
 | 2. 민수현 | https://www.acmicpc.net/problem/1062 |
 | 3. 안주현 | https://www.acmicpc.net/problem/1958 |
 | 4. 이서현 | https://www.acmicpc.net/problem/11509 |
