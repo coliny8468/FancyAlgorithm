@@ -2,7 +2,7 @@
 | 출제자    | 문제링크                                  |
 |--------|---------------------------------------|
 | 1. 남수정 |  |
-| 2. 민수현 |  |
+| 2. 민수현 | https://www.acmicpc.net/problem/1062 |
 | 3. 안주현 | https://www.acmicpc.net/problem/1958 |
 | 4. 이서현 | https://www.acmicpc.net/problem/11509 |
 | 5. 임수미 |  |
