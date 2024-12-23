@@ -1,9 +1,7 @@
 import java.util.*;
 
 public class Main {
-
     static Long[] messiSize = new Long[100]; // 배열 크기 충분히 설정
-    static int flag = 0;  // 공백 여부 확인용
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,31 +24,31 @@ public class Main {
     }
 
     static void findCharacter(int index, long n) {
-        if (flag == 1) {  // 공백 출력 조건
-            System.out.println("Messi Messi Gimossi");
-            return;
-        }
-
         if (index == 1) {  // messi(1) -> "Messi"
             System.out.println("Messi".charAt((int)n - 1));
             return;
         } else if (index == 2) {  // messi(2) -> "Messi Gimossi"
-             char a = "Messi Gimossi".charAt((int)n-1);
+            char a = "Messi Gimossi".charAt((int)n-1);
             if (a == ' ') {
                 System.out.println("Messi Messi Gimossi");
                 return;
-            }else {
+            } else {
                 System.out.println(a);
                 return;
             }
         }
 
-        if (messiSize[index - 1] >= n) {  // messi(N-1)에 속하는 경우
+        // messi(N-1)에 속하는 경우
+        if (messiSize[index - 1] >= n) {
             findCharacter(index - 1, n);
-        } else if (messiSize[index - 1] + 1 == n) {  // 공백에 해당하는 경우
-            flag = 1;
-            findCharacter(index - 1, n); // 재귀 호출로 공백 출력
-        } else {  // messi(N-2)에 속하는 경우
+        } 
+        // 공백에 해당하는 경우
+        else if (messiSize[index - 1] + 1 == n) {
+            System.out.println("Messi Messi Gimossi");
+            return;
+        }
+        // messi(N-2)에 속하는 경우
+        else {
             findCharacter(index - 2, n - messiSize[index - 1] - 1);
         }
     }
