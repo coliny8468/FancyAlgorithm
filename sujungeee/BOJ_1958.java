@@ -20,7 +20,6 @@ public class BOJ_1958 {
     }
 
     public static int LCS(String s1, String s2, String s3) {
-        StringBuilder sb= new StringBuilder();
         int n= s1.length();
         int m= s2.length();
         int l= s3.length();
