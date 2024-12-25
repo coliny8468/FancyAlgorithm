@@ -1,5 +1,5 @@
 // https://www.acmicpc.net/problem/1958
-// 1958: 수
+// 1958: LCS 3
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
