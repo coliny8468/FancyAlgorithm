@@ -5,7 +5,7 @@
 | 2. 민수현 | https://www.acmicpc.net/problem/1062 |
 | 3. 안주현 | https://www.acmicpc.net/problem/1958 |
 | 4. 이서현 | https://www.acmicpc.net/problem/11509 |
-| 5. 임수미 |  |
+| 5. 임수미 | https://www.acmicpc.net/problem/17349 |
 
 <br/>
 
