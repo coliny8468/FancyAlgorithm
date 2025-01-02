@@ -11,3 +11,4 @@ person.sort()
 
 for i in range(N):
     print(str(person[i][0])+" "+person[i][2])
+
