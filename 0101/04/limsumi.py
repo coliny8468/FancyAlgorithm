@@ -1,6 +1,5 @@
 import sys
 
-
 def check(s):
     return s == s[::-1]
 
