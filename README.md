@@ -1,9 +1,9 @@
 # 🧩 1월 2주차 주간 문제
 | 출제자    | 문제링크                                  |
 |--------|---------------------------------------|
-| 1. 남수정 | https://www.acmicpc.net/problem/2344 | 
-| 2. 민수현 | https://www.acmicpc.net/problem/20440 |
-| 3. 안주현 | https://www.acmicpc.net/problem/3190 |
+| 1. 남수정 |  | 
+| 2. 민수현 |  |
+| 3. 안주현 | https://www.acmicpc.net/problem/17352|
 
 
 <br/>
