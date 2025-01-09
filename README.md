@@ -1,7 +1,7 @@
 # 🧩 1월 3주차 주간 문제
 | 출제자    | 문제링크                                  |
 |--------|---------------------------------------|
-| 1. 남수정 | https://www.acmicpc.net/problem/1043 | 
+| 1. 남수정 | https://www.acmicpc.net/problem/2195 | 
 | 2. 민수현 | https://www.acmicpc.net/problem/2668 |
 | 3. 안주현 | https://www.acmicpc.net/problem/17352|
 
