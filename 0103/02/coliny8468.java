@@ -6,7 +6,6 @@ public class Main {
     static int[] nums;
     static List<Integer> answer = new LinkedList<>();
     static boolean[] visit;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
