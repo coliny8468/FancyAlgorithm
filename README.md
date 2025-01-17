@@ -3,7 +3,7 @@
 |--------|---------------------------------------|
 | 1. 남수정 | https://www.acmicpc.net/problem/2195 | 
 | 2. 이서현 | https://www.acmicpc.net/problem/2877 |
-| 3. 안주현 | https://www.acmicpc.net/problem/17352|
+| 3. 안주현 |https://www.acmicpc.net/problem/16974|
 
 
 <br/>
