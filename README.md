@@ -1,7 +1,7 @@
-# 🧩 1월 4주차 주간 문제
+# 🧩 2월 1주차 주간 문제
 | 출제자    | 문제링크                                  |
 |--------|---------------------------------------|
-| 1. 안주현 |[https://www.acmicpc.net/problem/16974](https://www.acmicpc.net/problem/13975)|
+| 1. 임수미 |[https://www.acmicpc.net/problem/2234](https://www.acmicpc.net/problem/2234)|
 
 
 <br/>
