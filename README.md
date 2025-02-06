@@ -1,7 +1,7 @@
 # 🧩 2월 1주차 주간 문제
 | 문제링크                                  |
 |---------------------------------------|
-|[[https://www.acmicpc.net/problem/2234](https://www.acmicpc.net/problem/2234)](https://www.acmicpc.net/problem/1339)|
+|https://www.acmicpc.net/problem/1339|
 
 
 <br/>
