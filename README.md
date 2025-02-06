@@ -1,7 +1,7 @@
 # 🧩 2월 1주차 주간 문제
-| 출제자    | 문제링크                                  |
-|--------|---------------------------------------|
-| 1. 임수미 |[https://www.acmicpc.net/problem/2234](https://www.acmicpc.net/problem/2234)|
+| 문제링크                                  |
+|---------------------------------------|
+|[[https://www.acmicpc.net/problem/2234](https://www.acmicpc.net/problem/2234)](https://www.acmicpc.net/problem/1339)|
 
 
 <br/>
