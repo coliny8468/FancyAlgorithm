@@ -1,0 +1,55 @@
+import java.util.*;
+
+
+public class Main {
+
+    static class Info {
+        int jari;
+        char c;
+
+
+        Info(char c, int jari) {
+            this.c = c;
+            this.jari = jari;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Map<Character, Integer> al = new HashMap<>();
+        String array[] = new String[n];
+        List<Info> sum = new ArrayList<>();
+        double ans = 0;
+
+        for (int i = 0; i < n; i++) {
+            array[i] = sc.next();
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < array[i].length(); j++) {
+                al.put(array[i].charAt(j), al.getOrDefault(array[i].charAt(j), 0)+(int)Math.pow(10, array[i].length()-j-1));
+            }
+        }
+
+
+        for (Map.Entry<Character, Integer> entry : al.entrySet()) {
+            sum.add(new Info(entry.getKey(), entry.getValue()));
+        }
+
+
+        sum.sort((a, b) -> {
+           return Integer.compare(b.jari, a.jari); // jari 큰순
+        });
+
+        int start = 9;
+        for (int i = 0; i < sum.size(); i++) {
+          ans = ans + start * sum.get(i).jari;
+          start--;
+        }
+
+        System.out.println((int)ans);
+
+    }
+}
