@@ -1,8 +1,8 @@
 # 🧩 2월 2주차 주간 문제
 | 문제링크                                  |
 |---------------------------------------|
-|https://www.acmicpc.net/problem/1339|
-|https://www.acmicpc.net/problem/2661|
+|https://www.acmicpc.net/problem/1148|
+
 
 
 <br/>
