@@ -67,13 +67,13 @@ public class Main {
                     int nowIndex = now.index;
                     int nowCost = now.cost;
 
-                    if (nowCost > minDis[j][nowIndex]) continue;
-                    if (map[nowIndex] != null) {
-                        for (Node next : map[nowIndex]) {
-                            int newCost = minDis[j][nowIndex] + next.cost;
-                            if (newCost < minDis[j][next.index]) {
+                    if (nowCost > minDis[j][nowIndex]) continue; //현재 코스트가 저 작은 값보다 크면 굳이 플로이드 워셜안해도됨
+                    if (map[nowIndex] != null) { //맵에서 지금인테스를 거쳐 갈수있는 놈들이있을경우
+                        for (Node next : map[nowIndex]) {// 맵안에 지금 현재인덱스에서 갈수있는 놈들이 모여있는거임!!
+                            int newCost = minDis[j][nowIndex] + next.cost; //뉴는 저걸 거쳐서 가는 길의 비용인거임
+                            if (newCost < minDis[j][next.index]) {// 그래서 원래 값보다 이 뉴가 적으면 갱신하느거임
                                 minDis[j][next.index] = newCost;
-                                pQ.add(new Node(next.index, newCost));
+                                pQ.add(new Node(next.index, newCost));// 그리고 이놈을 넣어서 또 다른 최단 경로로 사용할꺼다
                             }
 
                         }
@@ -92,7 +92,7 @@ public class Main {
             for (int j = 1; j <= roomN; j++) {
                 int sum = 0;
                 for (int l = 0; l < k; l++) {
-                    sum = sum + minDis[l][j];
+                    sum = sum + minDis[l][j];이거는 사람마다의 모든 길을 더한다!!!!
                 }
 
                 if (sum < min) {
