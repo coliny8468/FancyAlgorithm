@@ -67,7 +67,7 @@ public class Main {
                     int nowIndex = now.index;
                     int nowCost = now.cost;
 
-                    if (nowCost > minDis[j][nowIndex]) continue; //현재 코스트가 저 작은 값보다 크면 굳이 플로이드 워셜안해도됨
+                    if (nowCost > minDis[j][nowIndex]) continue; //현재 코스트가 저 작은 값보다 크면 굳이
                     if (map[nowIndex] != null) { //맵에서 지금인테스를 거쳐 갈수있는 놈들이있을경우
                         for (Node next : map[nowIndex]) {// 맵안에 지금 현재인덱스에서 갈수있는 놈들이 모여있는거임!!
                             int newCost = minDis[j][nowIndex] + next.cost; //뉴는 저걸 거쳐서 가는 길의 비용인거임
