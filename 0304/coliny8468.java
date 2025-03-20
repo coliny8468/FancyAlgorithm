@@ -67,20 +67,16 @@ public class Main {
                     int nowIndex = now.index;
                     int nowCost = now.cost;
 
-                    if (nowCost > minDis[j][nowIndex]) continue; //현재 코스트가 저 작은 값보다 크면 굳이
-                    if (map[nowIndex] != null) { //맵에서 지금인테스를 거쳐 갈수있는 놈들이있을경우
+                    if (nowCost > minDis[j][nowIndex]) continue; //현재 코스트가 저 작은 값보다 크면 굳이 할필요없다
+                    if (map[nowIndex] != null) { //지금 인덱스에서 갈수있는 녀석들이 있는지
                         for (Node next : map[nowIndex]) {// 맵안에 지금 현재인덱스에서 갈수있는 놈들이 모여있는거임!!
-                            int newCost = minDis[j][nowIndex] + next.cost; //뉴는 저걸 거쳐서 가는 길의 비용인거임
-                            if (newCost < minDis[j][next.index]) {// 그래서 원래 값보다 이 뉴가 적으면 갱신하느거임
+                            int newCost = minDis[j][nowIndex] + next.cost; //지금 인덱스에서 그녀석으로 가는 거리인거임(이전인거야! 지금 pq에 들어있는놈)
+                            if (newCost < minDis[j][next.index]) {// 그래서 원래 값보다 이 뉴가 적으면 갱신인거임!! --> 이놈까지 가는 더 빠른길!
                                 minDis[j][next.index] = newCost;
-                                pQ.add(new Node(next.index, newCost));// 그리고 이놈을 넣어서 또 다른 최단 경로로 사용할꺼다
+                                pQ.add(new Node(next.index, newCost));// 그리고 이놈이 그 점으로 가는 제일 빠른 길이니까 또 다른 경로에 이용얌
                             }
 
                         }
-                    }
-
-                    {
-
                     }
                 }
 
