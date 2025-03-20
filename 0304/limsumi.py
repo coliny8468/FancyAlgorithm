@@ -21,10 +21,6 @@ for i in range(T):
         for a in range(1, n + 1):
             for b in range(1, n + 1):
                 graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
-                graph[b][a] = min(graph[b][a], graph[k][a] + graph[b][k])
-
-                graph[a][b]=min(graph[a][b], graph[b][a])
-                graph[b][a]=min(graph[a][b], graph[b][a])
 
     p=int(input())
 
