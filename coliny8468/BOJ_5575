@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // 3명의 직원에 대한 시간 정보를 입력받고 계산합니다.
+        for (int i = 0; i < 3; i++) {
+            // 출근 시간 (h, m, s), 퇴근 시간 (h, m, s)
+            int h1 = sc.nextInt();
+            int m1 = sc.nextInt();
+            int s1 = sc.nextInt();
+            int h2 = sc.nextInt();
+            int m2 = sc.nextInt();
+            int s2 = sc.nextInt();
+            
+            // 출근 시간과 퇴근 시간의 차이를 초 단위로 계산
+            int startTotalSeconds = h1 * 3600 + m1 * 60 + s1;
+            int endTotalSeconds = h2 * 3600 + m2 * 60 + s2;
+            
+            int diffSeconds = endTotalSeconds - startTotalSeconds;
+            
+            // 초를 시, 분, 초로 변환
+            int hours = diffSeconds / 3600;
+            diffSeconds %= 3600;
+            int minutes = diffSeconds / 60;
+            int seconds = diffSeconds % 60;
+            
+            // 결과 출력
+            System.out.println(hours + " " + minutes + " " + seconds);
+        }
+        
+        sc.close();
+    }
+}
