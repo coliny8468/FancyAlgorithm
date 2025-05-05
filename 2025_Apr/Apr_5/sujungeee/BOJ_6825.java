@@ -10,6 +10,7 @@ public class BOJ_6825 {
         double weight = sc.nextDouble();
         double height = sc.nextDouble();
         double bmi = weight / (height * height);
+
         if (bmi > 25) {
             System.out.println("Overweight");
         } else if (bmi >= 18.5) {
