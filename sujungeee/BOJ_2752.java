@@ -17,8 +17,8 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-
         Arrays.sort(arr);
+
         for (int i = 0; i < 3; i++) {
             if (i == 2) {
                 sb.append(arr[i]);
