@@ -1,0 +1,36 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String input = br.readLine();
+		int len = input.length();
+		
+		String result = null;
+		
+		for(int i=1; i<len-1; i++){
+			for(int j=i+1; j<len; j++){
+				String part1 = input.substring(0,i);
+				String part2 = input.substring(i,j);
+				String part3 = input.substring(j);
+				
+				String rev1 = new StringBuilder(part1).reverse().toString();
+				String rev2 = new StringBuilder(part2).reverse().toString();
+				String rev3 = new StringBuilder(part3).reverse().toString();
+				
+				String combined = rev1 + rev2 + rev3;
+				
+				if(result == null || combined.compareTo(result)<0){
+					result = combined;
+				}
+
+			}	
+		}
+		
+		System.out.println(result);
+
+	}
+}
