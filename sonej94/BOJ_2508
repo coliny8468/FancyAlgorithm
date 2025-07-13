@@ -1,0 +1,52 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int T = Integer.parseInt(br.readLine());
+		
+		for(int t = 0; t<T; t++) {
+			br.readLine();
+			
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			int r = Integer.parseInt(st.nextToken());
+			int c = Integer.parseInt(st.nextToken());
+			
+			char[][] arr = new char[r][c];
+			
+			for(int i=0; i<r; i++){
+				String line = br.readLine();
+				arr[i] = line.toCharArray();
+			}
+			
+			int cnt = 0;
+			
+			for(int i=0; i<r; i++){
+				for(int j=0; j<=c-3; j++) {
+					if(arr[i][j] == '>' && arr[i][j+1] == 'o' && arr[i][j+2] == '<'){
+						cnt++;
+					}
+				}
+			}
+			
+			for(int j=0; j<c; j++){
+				for(int i =0; i<=r-3; i++){
+					if(arr[i][j] == 'v' && arr[i+1][j] == 'o' && arr[i+2][j] =='^'){
+						cnt++;
+					}
+				}
+				
+			}
+
+			System.out.println(cnt);
+			
+		
+		}
+
+	}
+}
