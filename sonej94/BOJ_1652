@@ -1,0 +1,57 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine());
+		
+		char[][] map = new char[N][N];
+		
+		for(int i=0; i<N; i++){
+			String line = br.readLine();
+			
+			for(int j =0; j<N; j++ ){
+				map[i][j] = line.charAt(j);
+			}
+		}
+		
+		int xcnt = 0, ycnt =0;
+
+
+		for(int i=0; i<N; i++){
+			
+			int cnt = 0;
+			for(int j=0; j<N; j++){
+				
+				if(map[i][j] == '.'){
+					cnt++;
+				}else {
+					if(cnt >=2) { xcnt++;}
+					cnt=0;
+				}
+			}
+			if(cnt>=2) {xcnt++; }
+		}
+		
+		
+		for(int j=0; j<N; j++){
+			
+			int cnt = 0;
+			for(int i=0; i<N; i++){
+				
+				if(map[i][j] == '.'){
+					cnt++;
+				}else {
+					if(cnt >=2) { ycnt++;}
+					cnt=0;
+				}
+			}
+			if(cnt>=2) {ycnt++; }
+		}
+		
+		System.out.println(xcnt+ " " + ycnt);
+		
+	}
+}
