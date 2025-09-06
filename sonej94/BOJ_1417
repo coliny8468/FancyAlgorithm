@@ -1,0 +1,36 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Main {
+	
+	public static void main(String[] args) throws Exception {
+	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(br.readLine().trim());
+		
+		int me = Integer.parseInt(br.readLine().trim());
+		if(N == 1){
+			System.out.println(0);
+			return;
+		}
+		
+		PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
+		for(int i=2; i<= N; i++){
+			pq.offer(Integer.parseInt(br.readLine().trim()));
+		}
+		
+		int cnt =0;
+		while(!pq.isEmpty() && pq.peek() >= me ){
+			int top = pq.poll();
+			top -= 1;
+			me +=1;
+			cnt+=1;
+			pq.offer(top);
+		}
+		System.out.println(cnt);
+		
+	}
+}
