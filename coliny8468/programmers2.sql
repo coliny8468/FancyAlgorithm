@@ -1,0 +1,7 @@
+SELECT DISTINCT d.ID, d.EMAIL, d.FIRST_NAME, d.LAST_NAME
+FROM DEVELOPERS d
+JOIN SKILLCODES s
+  ON d.SKILL_CODE & s.CODE = s.CODE 
+  //비트연산자를 활용한 것 하나라도 속하는 2의 배수가 있으면 추가됨
+WHERE s.CATEGORY = 'Front End'
+ORDER BY d.ID;
