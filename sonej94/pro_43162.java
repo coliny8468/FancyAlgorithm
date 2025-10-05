@@ -13,9 +13,9 @@ class Solution {
     }
 
     private void dfs(int cur, int[][] g, boolean[] visited, int n) {
+        
         visited[cur] = true;
         for (int next = 0; next < n; next++) {
-            if (next == cur) continue;
             if (g[cur][next] == 1 && !visited[next]) {
                 dfs(next, g, visited, n);
             }
